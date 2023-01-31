@@ -20,7 +20,7 @@ keywords:
   - embeddings
 ---
 
-Building applications with Large Language Models don't have to be complicated. A lot has been going on recently to simplify the development, 
+Building applications with Large Language Models doesn't have to be complicated. A lot has been going on recently to simplify the development, 
 so you can utilize already pre-trained models and support even complex pipelines with a few lines of code. [LangChain](https://langchain.readthedocs.io) 
 provides unified interfaces to different libraries, so you can avoid writing boilerplate code and focus on the value you want to bring.
 
