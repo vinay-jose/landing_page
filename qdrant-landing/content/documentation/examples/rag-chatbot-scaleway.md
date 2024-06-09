@@ -117,7 +117,11 @@ text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=20
 splits = text_splitter.split_documents(docs)
 
 vectorstore = Qdrant.from_documents(
-    documents=splits, embedding=OpenAIEmbeddings(), location=":memory:", collection_name="lilianweng"
+    documents=splits,
+    embedding=OpenAIEmbeddings(),
+    url=os.environ["QDRANT_URL"],
+    collection_name="lilianweng",
+    api_key=os.environ["QDRANT_API_KEY"],
 )
 ```
 
